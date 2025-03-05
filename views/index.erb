@@ -6,11 +6,11 @@
     <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.js" integrity="sha384-oeUn82QNXPuVkGCkcrInrS1twIxKhkZiFfr2TdiuObZ3n3yIeMiqcRzkIcguaof1" crossorigin="anonymous"></script>
   </head>
 
-  <body>
-    <h1 class="">Wiki Ruby</h1>
+  <body class="justify-center">
+    <h1 class="text-4xl font-bold text-center">Wiki Ruby</h1>
     <div class="container mx-auto p-4" x-data="{isLoading: false}">
 
-    <form hx-get="/search" hx-target="#search-results" hx-swap="innerHTML" class="mb-4" @submit="isLoading = true">
+    <form class="justify-center align-center place-self-center" hx-get="/search" hx-target="#search-results" hx-swap="innerHTML" class="mb-4" @submit="isLoading = true">
       <input type="text" name="query" placeholder="Search..." class="border p-2 rounded"/>
       <button type="submit" class="bg-red-500 text-white rounded p-2">Search</button>
     </form>
