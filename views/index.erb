@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="nord">
   <head>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -14,7 +14,7 @@
 
     <form class="justify-center align-center place-self-center" hx-get="/search" hx-target="#search-results" hx-swap="innerHTML" class="mb-4" @submit="isLoading = true">
       <input type="text" name="query" placeholder="Search..." class="border p-2 rounded"/>
-      <button type="submit" class="bg-red-500 text-white rounded p-2">Search</button>
+      <button type="submit" class="bg-red-500 text-white rounded p-2 hover:bg-red-700">Search</button>
     </form>
     </div>
     <div id="search-results">
